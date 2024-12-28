@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 18px;
+    background-color: hsl(258, 38%, 95%);
+    font-family: sans-serif;
+}
+
+p,img{
+    margin: 5px 0px;
+}
+
+img{
+    width: 70%;
+}
+
+
+.mainContainer{
+    width: 375px;
+    height:520px;
+    margin: 5px;
+    padding:5px;
+}
+
+.commonValue{
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.subContainer1,.subContainer4,
+.subContainer5,.subContainer7
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.subContainer1,.subContainer2,
+.subContainer3{
+    font-size: 1.5rem;
+}
+
+.subContainer1,.subContainer5{
+    color: white;
+}
+
+.subContainer1,.subContainer5{
+    background-color: hsl(256, 67%, 59%);
+}
+
+.subContainer2,.subContainer6{
+    background-color:  hsl(0, 0%, 100%);
+}
+
+.subContainer3,.subContainer8{
+    background-color:  hsl(39, 100%, 71%);
+}
+
+.subContainer4{
+    background-color: hsl(254, 88%, 90%);
+
+}
+
+.subContainer7{
+    background-color: hsl(31, 66%, 93%);
+}
+
+.subContainer3{
+    height: 150px;
+    overflow: hidden;
+}
+
+@media(min-width:720px){
+
+    .mainContainer,.region1,
+    .sector1,.sector2,.sector3,
+    .subContainer4,.subContainer5,
+    .subSector12
+    {
+        display: flex;
+    }
+
+    .mainContainer{
+        width: 75%;
+        justify-content: center;
+        
+    }
+
+    .commonValue{
+        margin: 5px;
+        padding: 10px;
+    }
+
+    .region1,.region2{
+        width: 70%;
+    }
+
+    .region1,.sector3,
+    .subContainer4{
+        flex-direction: column;
+    }
+
+    .subContainer3,.subContainer4{
+        overflow: hidden;
+    }
+
+    .subContainer1 img,.subContainer7 img{
+        margin-top: 20px;
+    }
+
+    .subContainer7,.subContainer8{
+        font-size: 1.5rem;
+        height: 50%;
+    }
+
+    .region1{
+        order: 2;
+        flex-basis: 80%;
+    }
+
+    .region2{
+        order: 1;
+        flex-basis: 20%; 
+    }
+
+    .subSector1{
+        flex-basis: 72%;
+    }
+
+    .subSector2{
+        flex-basis: 28%;
+    }
+
+    .subContainer1 img{
+        width: 40%;
+    }
+
+    .subContainer3{
+        height: 170px;
+    }
+
+    .subContainer4{
+          justify-content:flex-end;
+          align-items: flex-end;
+          padding-left: 25px;
+          height: 91%;
+    }
+
+    .subContainer4 img{
+        width: 250px;
+        margin-right: -100px
+    }
+
+    .subContainer5{
+        flex-direction: row;
+        order: 2;
+    }
+
+    .subContainer5 img{
+        width: 25%;
+    }
+
+    .subContainer8 img{
+        margin-top: 10px;
+        height: 150px;
+        width: 98%;
+    }
+    
+}
