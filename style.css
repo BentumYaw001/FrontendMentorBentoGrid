@@ -131,11 +131,11 @@ img{
     }
 
     .subSector1{
-        flex-basis: 72%;
+        flex-basis: 65%;
     }
 
     .subSector2{
-        flex-basis: 28%;
+        flex-basis: 30%;
     }
 
     .subContainer1 img{
